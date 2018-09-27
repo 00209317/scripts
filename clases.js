@@ -45,3 +45,22 @@ for(let i = 0; i < dia.length; i++){
 //Funcion para el calculo de phi
 let arr = [20, 10, 30, 50];
 
+
+
+//Arreglo de tareas
+var todoList = [];
+
+//funcion de añadir
+function remember(task) {
+    todoList.push(task);
+}
+
+//funcion de recordar urgente
+function rememberUrgent(task) {
+    todoList.unshift(task);
+}
+
+//Obtener el primer dato (el mas urgente)
+function getTask(){
+    console.log(todoList.shift());
+}
